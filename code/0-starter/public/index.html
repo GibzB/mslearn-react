@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Recipes</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="module" src="/dist/index.js"></script>
+    <!-- The time now inside a div-->
+    <div id="time"></div>
+    <script>
+        // Get the time now
+        const time = new Date().toLocaleTimeString();
+        // Get the div
+        const timeDiv = document.getElementById('time');
+        // Set the time in the div
+        timeDiv.innerHTML = time;
+    </script>
+</body>
+</html>
